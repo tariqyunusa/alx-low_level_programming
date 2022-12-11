@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 /**
+ * main - return alphabets
  *
  * Return: Always 0 (Success)
  */
