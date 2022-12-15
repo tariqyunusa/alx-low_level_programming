@@ -4,9 +4,10 @@
 
 /**
  * print_numbers - print numbers from 0 to 9
- *
+ * Description: Printing numbers from0 to 9 followed by a new line.
  * Return: The numbers from 0 to 9
  */
+
 void print_numbers(void)
 {
 	int x;
