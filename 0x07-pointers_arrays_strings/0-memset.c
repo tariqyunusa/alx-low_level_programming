@@ -1,4 +1,4 @@
-#inclde "main.h"
+#include "main.h"
 /**
  * _memet - fills memory with a constant byte.
  * @s: source tring
