@@ -1,18 +1,20 @@
 #include "3-calc.h"
+#include <stdlib.h>
+#include <string.h>
 /**
  * get_op_func - function selects the corect function to perform.
  * @s: operator used.
- * Rturn: correct function result or NULL if operator is wrong
+ * Return: correct function result or NULL if operator is wrong
  */
 int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
-		("+", op_add),
-		("-", op_sub),
-		("*", op_mul),
-		("/", op_div),
-		("%", op_mod),
-		(NULL, NULL)
+		{"+", op_add},
+		{"-", op_sub},
+		{"*", op_mul},
+		{"/", op_div},
+		{"%", op_mod},
+		{NULL, NULL}
 	};
 	int i;
 
@@ -25,5 +27,5 @@ int (*get_op_func(char *s))(int, int)
 		}
 		i++;
 	}
-	return (NULL);
+	return (0);
 }
